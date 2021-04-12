@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Bulb On Off</title>
+      <style>
+          body{
+              background: black;
+          }
+         #bulb{
+         width:50%;
+         height:auto;
+         max-width:100%;
+         max-height: auto;
+         padding-top:10px;
+         display: block;
+         margin-left: 15%;
+         margin-right: auto;
+         width: 50%;
+         }
+         .myButton {
+         border-radius:15px;
+         display:inline-block;
+         cursor:pointer;
+         color:#ffffff;
+         font-family:Georgia;
+         font-size:32px;
+         font-weight:bold;
+         padding:10px 40px;
+         text-decoration:none;
+         margin-left: 30px;
+         margin-top: 50px;  
+         }
+         .myButton:active {
+         position:relative;
+         top:1px;
+         }
+         .myButton1 {
+         border-radius:15px;
+         display:inline-block;
+         cursor:pointer;
+         padding:10px 40px;
+         margin-right: 30px;
+         margin-top: 50px;
+         }
+         .myButton1:active {
+         position:relative;
+         top:1px;
+         }
+      </style>
+      <script>
+         function bulbon()
+         {
+         document.getElementById("bulb").src="hang-light-2.jpg";
+         document.getElementById("bulbstatus").element.innerHTML = "Bulb in On Now!";
+         }
+
+         function bulboff()
+         {
+         document.getElementById("bulb").src="bulboff.jpg";
+         }
+      </script>
+   </head>
+   <body>
+      <div>
+         <img id="bulb" src="hanging-bulb-on.jpg">
+          <input type="image" class="myButton" value="Bulb On" onclick="bulbon()" src="switch_on.png" width="25%">
+          <input type="image" class="myButton1" value="Bulb Off" onclick="bulboff()" src="switch_off.png" width="25%">
+      </div>
+   </body>
+</html>
